@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+</head>
+<body>
+    <!--描述详情-->
+    <details>
+        <summary>点击查看更多</summary>
+        <p>
+            <h4>那时花开月正圆</h4>
+            <img src="../day01/img/moon.jpg" />
+        </p>
+    </details>
+    <p>哈哈哈</p>
+
+    <!--独立的文档流（内容有缩进功能）-->
+    <figure>
+        <figcaption>那时花开月正圆是一部不错的电视剧</figcaption>
+        <p>
+            <h4>那时花开月正圆</h4>
+            <img src="../day01/img/moon.jpg" />
+        </p>
+    </figure>
+    <p>好看！好看！好看！好看！</p>
+
+    <!--特殊标记-->
+    <p><mark style="background:pink">那时花开月正圆</mark>是一部不错的电视剧</p>
+
+    <!--比较大小（更接近最大值还是最小值）-->
+    <meter></meter><br />
+    0<meter min="0" max="100" value="20"></meter>100<br />
+
+    <!--生僻字加拼音-->
+    <ruby>
+        觊<rt>ji</rt>觎<rt>yu</rt>我的皇位！
+    </ruby>没有啊！<br />
+
+    <!--进度条-->
+    <progress></progress>
+    <progress max="100" value="20"></progress><br /><br />
+
+    <!--模糊查询1-->
+    <input type="search" list="mydata"/><br /><br />
+    <datalist id="mydata" >
+        <option value="java">共搜索了1000次 </option>
+        <option value="app">共搜索了2000次</option>
+        <option value="application">共搜索了3000次</option>
+    </datalist>
+    <!--模糊查询2-->
+    <label for="country">Country:</label> 
+    <datalist id="country_list"> 
+      <select name="country"> 
+        <option value="AF">Afghanistan</option> 
+        <option value="AX">Åland Islands</option> 
+        <option value="AL">Albania</option> 
+        <option value="DZ">Algeria</option> 
+        <option value="AS">American Samoa</option> 
+        <!-- more --> 
+      </select> 
+      If other, please specify: 
+    </datalist> 
+    <input type="text" name="country" id="country" list="country_list"> 
+</body>
+</html>

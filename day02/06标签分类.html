@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+</head>
+<body>
+    <!--
+        html中标签的分类：
+        1.块级标签：单独占据一行
+        2.内联标签：不会换行的
+
+        对比两种标签：
+        1.块级标签
+          1.可以设置宽和高。没有设置宽度，宽为整个网页，没有设置高度，高为内容的高度。
+          2.可以设置任意位置的margin和padding
+          3.独占一行，默认有换行效果
+        2.内联标签
+          1.不能设置宽和高。宽是内容的宽，高是内容的高。
+          2.只能设置左和右的margin和padding
+          3.只占有内容的实际大小，默认不换行
+
+        margin:标签的外间距
+        padding:标签的内间距
+
+        学过的块级标签有:hx、hr、p、table、tr、div、form
+        学过的内联标签有：font、i、u、del、b、span、a、td、input、select、textarea
+
+        display:设置标签的呈现方式
+        1.block:显示为块级标签
+        2.inline:显示为内联标签
+        3.inline-block: 不换行，可以设置宽度，不可以设置高度。
+
+    -->
+    <!--块级标签-->
+    <div style="background:pink; margin-top: 20px; margin-left: 20px; margin-bottom: 20px; margin-right: 20px">hello world1</div>
+    <div style="background:yellow; padding-top: 20px; padding-left: 20px; padding-bottom: 20px; padding-right: 20px">hello world2 hello world2 hello world2 hello world2 hello world2 hello world2 hello world2 hello world2 hello world2 hello world2</div>
+
+    <div style="background: green; width: 100px; height:100px;">good luck1</div>
+    <div style="background:gray; width:100px; height:100px;">good luck2</div>
+    <hr />
+    <!--内联标签-->
+    <span style="background: pink; margin-top: 20px; margin-left: 20px; margin-right: 20px; margin-bottom: 20px;">hello world3</span>
+    <span style="background:navajowhite; padding-left:20px; padding-top:20px; padding-bottom:20px; padding-right:20px;">hello world4</span>
+
+    <span style="background:gold; width:100px; height:100px;">good luck3</span>
+    <br /><br />
+
+    <!--img-->
+    <img src="../day01/img/donghuagirl.jpg" style="width:200px; height:200px;"/>
+    <img src="../day01/img/donghuagirl.jpg" /><br /><br />
+
+    <h2>原来的样子</h2>
+    <div style="background:red;">hello world!</div>
+    <div style="background:red;">hello world!</div>
+    <span style="background:gold;">hello world!</span>
+    <span style="background:gold;">hello world!</span>
+    <h2>现在的样子</h2>
+    <div style="background:red; display: inline; width: 20px;">hello world!</div>
+    <div style="background:red; display: inline;">hello world!</div>
+    <span style="background:gold; display: block;">hello world!</span>
+    <span style="background:gold; display:block;">hello world!</span>
+
+    <span style="display: inline-block; background: greenyellow; width:200px; heitht:200px;">你好，世界！</span>
+    <span style="display: inline-block; background: yellowgreen;">你好，世界！</span>
+</body>
+</html>

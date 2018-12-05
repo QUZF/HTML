@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图片映射</title>
+	</head>
+	<body>
+        <!--
+            先在页面里显示一张图片，并且固定它的宽高，单位为像素；
+            在图中加入各种形状区域的点击效果:
+              1.圆形: 前二个数是圆心坐标，后一个数是半径
+              2.长方形: 左上、右下坐标点值x,y
+              3.多边形: 各个顶点的坐标点值
+            浏览网页时，点击圆形、长方形、多边形的area，可在对应的target区域显示href链接网页。
+        -->
+        <img src='img/6rose.jpg' alt='' usemap="#6rosemap">
+        <map name='6rosemap'>
+            <area shape="circle" coords="200,150,50" href='http://www.baidu.com' target='_blank' alt="">
+            <area shape='rect' coords='300,400,500,300' href="http://www.163.com" target="_blank" alt="">
+        </map>
+	</body>
+</html>

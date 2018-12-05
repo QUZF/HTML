@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <!--
+        1.什么是表单？  用户输入或者操作，数据进行提交的基本单位。
+        2.什么是表单域？用户可以输入或者可以操作的元素。
+        
+        input标签的常用属性
+        1.type 设置内容的显示方式：
+            text(纯文本)
+            password(密码)
+            submit(提交数据)
+            reset(重置数据)
+        2.placeholder 设置输入的提示信息
+        3.value 保存用户输入或者操作的信息
+        4.name 表单域的名字，设置name就会提交数据
+
+        form表单的常用属性：
+        1.action 设置数据提交的位置(路径)
+        2.method 设置数据的提交方式
+            get: 直接将数据显示在地址栏中，
+                优点：提交速度快
+                缺点：不安全，携带的数据少
+            post:不能在url地址栏中看到提交的数据
+                缺点：速度慢
+                优点：安全，携带数据多
+    -->
+    <h2>登录页面</h2>
+    <form action="others/success.html" method="GET">
+        请输入账号：<input name="uname" placeholder="请输入手机号或者邮箱" /><br /><br />
+        请输入密码：<input name="upass" placeholder="请输入6-8位的密码" type="password" /><br /><br />
+        <input type="submit" value="登录" />
+        <input type="reset" value="清空" />
+    </form>
+</body>
+</html>

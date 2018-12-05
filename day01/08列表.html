@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			列表：
+			1.无序列表ul
+			  1.type='disc' 默认黑色圆点
+			  2.type='circle' 空心圆点
+			  3.type='square' 方块
+			  列表项li
+			2.有序列表ol
+			  1.type='1' 默认数组
+			  2.type='a|A' 字母
+			  3.type='i|I' 罗马字母
+			  列表项li
+			3.自定义列表dl
+			  dt 列表名
+			  dd 列表项
+		-->
+		<h2>无序列表</h2>
+		现代四大发明
+		<ul type=none>
+			<li>支付宝</li>
+			<li>共享单车</li>
+			<li>网购</li>
+			<li>高铁</li>
+		</ul>
+		
+		<hr />
+		二级显示
+		现代四大发明
+		<ul type=none>
+			<li>支付宝</li>
+			<li>共享单车</li>
+				<ul type=none>
+					<li>ofo</li>
+					<li>摩拜</li>
+				</ul>
+			<li>网购</li>
+			<li>高铁</li>
+		</ul>
+		<hr />
+		
+		<h2>有序列表</h2>
+		<ol type="A">
+			<li>支付宝</li>
+			<li>共享单车</li>
+				<ol type=none>
+					<li>ofo</li>
+					<li>摩拜</li>
+				</ol>
+			<li>网购</li>
+			<li>高铁</li>
+		</ol>
+		<hr />
+		
+		<h2>自定义列表</h2>
+		<dl>
+			<dt>我的自定义列表：列表名</dt>
+			<dd>自定义列表项1</dd>
+			<dd>自定义列表项2</dd>
+			<dd>自定义列表项3</dd>
+			<dd>自定义列表项4</dd>
+		</dl>
+	</body>
+</html>

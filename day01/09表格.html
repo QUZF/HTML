@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			表格的组成：
+			1.表格: table 2.行: tr  3.单元格: tr th
+			表格的属性：
+			1.设置边框线：border边线 bordercolor边框线的颜色
+			2.设置单元络之间的间距cellspace
+			3.设置边框线的合并style='border-collapse:collapse;'
+			表格的合并
+			1.行合并：（下一行要少一行）rowspan
+			2.单元格合并：（少单元格）colspan
+		-->
+		<table bgcolor="aliceblue" style='border-collapse:collapse;' width='80%' border="1px" bordercolor="red" cellspacing="0px">
+			<tr>
+				<th>姓名</th>
+				<th>电话</th>
+				<th>性别</th>
+				<th>年龄</th>
+			</tr>
+			<tr heitht='50px'>
+				<td width="25%" align="center"><b>admin</b></td>
+				<td width="25%">13333445556</td>
+				<td width="25%">男</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<td>a</td>
+				<td>a</td>
+				<td>a</td>
+				<td>a</td>
+			</tr>
+		</table>
+		<br />
+		<table align="center" bgcolor="aliceblue" style='border-collapse:collapse;' width='80%' border="1px" bordercolor="red" cellspacing="0px">
+			<caption>我的表格</caption>
+			<tr>
+				<td>a</td>
+				<td>a</td>
+				<td>a</td>
+				<td>照片</td>
+			</tr>
+			<tr>
+				<td>a</td>
+				<td>a</td>
+				<td>a</td>
+				<td rowspan="3">&nbsp;</td>
+			</tr>
+			<tr>
+				<td>a</td>
+				<td>a</td>
+				<td>a</td>
+			</tr>
+			<tr>
+				<td>a</td>
+				<td>a</td>
+				<td>a</td>
+			</tr>
+			<tr>
+				<td colspan="4" align="right">
+					上一页
+					下一页
+					首页
+					尾页
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

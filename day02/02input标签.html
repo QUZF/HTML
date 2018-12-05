@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>input标签</title>
+</head>
+<body>
+    <form>
+        请输入账号：<input type="text" /><br /><br />
+        请输入密码：<input type="password" /><br /><br />
+        请选择爱好：
+        <input type="checkbox" checked />敲代码1
+        <input type="checkbox" />敲代码2
+        <input type="checkbox" />敲代码3
+        <input type="checkbox" />敲代码4
+        <br /><br />
+        请选择性别：
+        <input name="gender" type="radio" checked />男
+        <input name="gender" type="radio" />女
+        <input name="gender" type="radio" />未知
+        <input type="hidden" name="id" value="10" />
+        <br /><br />
+        <input type="submit" value="提交" />
+        <input type="reset" type="清空" />
+    </form>
+    <br />
+        <input type="button" value="一般按钮" onclick="alert('点我干什么？')" />
+    <br /><br />
+    <form action="others/success.html" method="POST" enctype="multipart/form-data">
+        <input type="file" />
+        <input type="submit" value="上传" />
+    </form>
+</body>
+</html>
